@@ -21,3 +21,17 @@ function toggleCta() {
         share.classList.add('visible');
     }
 }
+
+let tl = gsap.timeline();
+
+const articleText = document.querySelector('.animateText')
+
+function textAnimation(){
+    tl.from('.card-article-text', {duration: 1, y: 20})
+    .from('.user-info', {duration: 1, x: 50, ease: 'back.out'}, "<")
+}
+
+articleText.addEventListener('click', textAnimation)
+
+const userInfo = document.querySelector('.user-info')
+

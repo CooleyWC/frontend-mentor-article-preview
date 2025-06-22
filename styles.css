@@ -87,7 +87,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
+  gap: 1em;
+}
+
+.button-wrapper {
+  margin: 0 auto;
 }
 
 .container {
