@@ -1,4 +1,3 @@
-const footer = document.getElementById('card-footer')
 const share = document.getElementById('share-content')
 
 const ctaButton = document.getElementById('cta')
