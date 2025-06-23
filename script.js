@@ -15,11 +15,7 @@ ctaButton.addEventListener('click', ()=>{
 })
 
 function toggleCta() {
-    if (share.classList.contains('visible')) {
-        share.classList.remove('visible');
-    } else {
-        share.classList.add('visible');
-    }
+    share.classList.toggle('visible')
 }
 
 let tl = gsap.timeline();
