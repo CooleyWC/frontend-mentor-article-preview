@@ -2,13 +2,19 @@ const share = document.getElementById('share-content')
 
 const ctaButton = document.getElementById('cta')
 
-
 ctaButton.addEventListener('click', ()=>{
     toggleCta()
     ctaButton.classList.toggle('active');
     const ctaImg = document.getElementById('cta-image');
     if (ctaButton.classList.contains('active')) {
         ctaImg.src = 'images/icon-share-active.svg';
+        gsap.set(share, { clearProps: 'all' });
+
+        gsap.fromTo(
+        share,
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.5 }
+        );
     } else {
         ctaImg.src = 'images/icon-share.svg';
     }
