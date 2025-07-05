@@ -242,7 +242,7 @@ main {
   .share-content {
     inset: unset;
     bottom: 120%;
-    right: 50px;
+    right: 53px;
     transform: translateX(50%);
     z-index: 10;
     padding: 1.2em 2em;

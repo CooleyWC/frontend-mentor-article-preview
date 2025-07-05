@@ -14,6 +14,14 @@ ctaButton.addEventListener('click', ()=>{
     }
 })
 
+document.addEventListener('click', (e)=>{
+    if(share.classList.contains('visible') && !share.contains(e.target) && !ctaButton.contains(e.target)){
+        share.classList.remove('visible')
+        ctaButton.classList.remove('active')
+        document.getElementById('cta-image').src = 'images/icon-share.svg'
+    }
+})
+
 function toggleCta() {
     share.classList.toggle('visible')
 }
