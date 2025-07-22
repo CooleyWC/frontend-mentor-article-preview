@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
     --clr-gray-dark: hsl(217, 19%, 35%);
     --clr-gray-med: hsl(214, 17%, 51%);
@@ -261,6 +260,15 @@ main {
     clip-path: polygon(50% 100%, 0 0, 100% 0);
 
   }
+}
+
+.social {
+  transition: transform .5s ease-in-out
+}
+
+.social:hover {
+  cursor: pointer;
+  transform: scale(1.2)
 }
 
 @media screen and (min-width: 1000px) {
